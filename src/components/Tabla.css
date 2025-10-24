@@ -1,0 +1,71 @@
+
+
+/* Estilos generales */
+.table-container {
+    background-color: #ece7e7;
+
+    margin-top: 90px;
+}
+
+
+
+.barra-button {
+    background-color: transparent;
+    height: 90px;
+    border: none;
+    padding: 10px 15px;
+    font-size:25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #adacac;
+}
+
+.barra-button.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+/* Estilos de la tabla */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-table thead {
+    background-color: #ffffff;
+    height: 40px;
+}
+
+.info-table th {
+    text-align: left;
+    padding: 15px, 10px;
+    font-weight:bold;
+    text-transform: uppercase;
+    color:#666
+}
+
+.info-table td:first-child {
+    text-align: center;
+}
+ 
+
+
+.info-table tbody tr:hover {
+    background-color: #cac2c2;
+}
+
+.info-table td {
+    padding: 15px 10px;
+    white-space: nowrap;
+} 
+
+.team-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; /* evita que se deformen */
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}

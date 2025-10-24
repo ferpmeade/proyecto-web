@@ -1,0 +1,39 @@
+.estadio-container {
+    margin-top: 90px;
+    text-align: center;
+
+}
+.tabs {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+.barra-button {
+    background-color: transparent;
+    height: 90px;
+    border: none;
+    padding: 10px 15px;
+    font-size:25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #adacac;
+}
+
+.barra-button.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+
+
+
+
+.imagen-estadio img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    height: auto;
+    border-radius: 20px; 
+    display: block; 
+    margin: 0 auto; 
+}

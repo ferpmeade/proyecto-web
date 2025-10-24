@@ -1,0 +1,38 @@
+.contador-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #ffffff;
+    padding: 20px;
+}
+.contador-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contador-valor {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+}
+.contador-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: black;
+}
+
+.subtitulo-principal {
+    color: #ffffff;
+}
