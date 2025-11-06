@@ -1,4 +1,5 @@
-import './Contador.css';
+'use client';
+import '../styles/Contador.css';
 import React, {useState, useEffect} from 'react';
 
 interface ContadorProps {

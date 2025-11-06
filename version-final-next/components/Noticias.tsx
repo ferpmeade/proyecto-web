@@ -1,48 +1,45 @@
-import React, { useState } from 'react';
-import './Noticias.css';
-import noticia1Imagen from '../assets/entrenamiento noticia 1.webp';
-import noticia2Imagen from '../assets/champions.webp';
-import lesionar from '../assets/lesion.avif';
-import victoriaa from '../assets/victoria.webp';
-import KM from '../assets/KM.jpg';
-import cris from '../assets/cr7.avif';
+// import React, { useState } from 'react';
+import '../styles/Noticias.css';
+import Image from 'next/image';
+import React from 'react';
+
 
 const datanoticias = [
   {
     id: 1,
     title: "Lesion de arnold",
     summary: "El jugador ingles se lesiona, estara afuera por unas semanas se pierde anfield",
-    image: lesionar,
+    image: "/assets/lesion.avif",
   },
   {
     id: 2,
     title: "CHAMPIONS",
     summary: "Regresa la champions league primer enfrentamiento contra el marsella",
-    image: noticia2Imagen,
+    image: "/assets/lesion.avif",
   },
   {
     id: 3,
     title: "Remontada",
     summary: "2-1 el madrid remonta para la victoria en el estreno de champions",
-    image: victoriaa,
+    image: "/assets/champions.webp",
   },
   {
     id: 4,
     title: "Se preparan para el proximo juego",
     summary: "El equipo entrena despues de la victoria en casa para recibir al espanyol ",
-    image: noticia1Imagen,
+    image: "/assets/victoria.webp",
   },
   {
     id: 5,
     title: "50 goles",
     summary: "Kilian Mbappe llega a los 50 goles con el madrid en 64 partidos",
-    image: KM,
+    image: "/assets/KM.jpg",
   },
   {
     id: 6,
     title: "Superara a Cristiano en goles de champions",
     summary: "El frances lleva 57 goles, el portugues 140 lo lograra?",
-    image: cris,
+    image: "/assets/cr7.avif",
   },
 ];
 
@@ -53,7 +50,12 @@ const Noticias = () => {
         <div className='noticias-grid'>
           {datanoticias.map((noticia) => (
             <div className="noticia-item" key={noticia.id}>
-              <img src={noticia.image} alt={noticia.title} />
+              <Image 
+                src={noticia.image} 
+                alt={noticia.title}
+                width={100}   // ancho en px
+                height={200}  // alto en px 
+              />
               <h3>{noticia.title}</h3>
               <p>{noticia.summary}</p>
             </div>
